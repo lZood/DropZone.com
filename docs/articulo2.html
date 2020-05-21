@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-widht, initial-scale=1">
+    <title>DropZone</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <style>
+        /* Telefonos moviles:  aqui se hace que todos las columnas sean basadas en un ancho de 100 por ciento 
+        esto basado en una premisa que maneja a las páginas web dividiendolo en 12 
+        columnas cada una con un diferente ancho, debemos de seleccionar las que se adapten a nuestras necesidades*/
+        [class*="col-"] {
+            width: 100%;
+        }
+        /* en esta parte es para las tabletas, se llama breakpoints, digamos que como un case, de acuerdo al tamaño de la pantalla o un if*/
+        @media only screen and (min-width: 600px) {
+            /*  tablets: */
+            .col-m-1 {width: 8.33%;}
+            .col-m-2 {width: 16.66%;}
+            .col-m-3 {width: 25%;}
+            .col-m-4 {width: 33.33%;}
+            .col-m-5 {width: 41.66%;}
+            .col-m-6 {width: 50%;}
+            .col-m-7 {width: 58.33%;}
+            .col-m-8 {width: 66.66%;}
+            .col-m-9 {width: 75%;}
+            .col-m-10 {width: 83.33%;}
+            .col-m-11 {width: 91.66%;}
+            .col-m-12 {width: 100%;}
+        }
+        @media only screen and (min-width: 768px) {
+            /* Escritorio: */
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+        }
+        .analisis
+        {
+            background-color: rgb(46, 46, 46);
+            color: white;
+        }
+    </style>
+</head>
+<body >
+
+        
+        <header class="header">
+            <div class="container logo-nav-container">
+                <a href="index.html" class="logo"><h3>DropZone</h3></a>
+                <span class="menu-icon">Ver Menu</span>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#">Novedades</a></li>
+                        <li><a href="#">Noticias</a></li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="#">Analisis</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <h2>NetherRealm trabajó de cerca con Peter Weller para añadir a RoboCop en Mortal Kombat 11: Aftermath</h2>
+                <br>
+                <div align="center"><img src="images/MortalKompat.jpg"></div>
+                <br>
+                <p>Recientemente la desarrolladora NetherRealm Studios reveló sus próximos planes para su popular serie de combate, Mortal Kombat, con el anuncio del contenido DLC Mortal Kombat 11: Aftermath.</p>
+                <p>Una de las revelaciones fue la inclusión de RoboCop como personaje jugable. El artista principal del juego, Brendan George, confirmó en un nuevo blog que la desarrolladora entrevistó al mismísimo actor de las películas, Peter Weller, para recolectar tanta información del personaje como fuera posible. La compañía también tomó al artista en una ronda de scanners y grabaciones para extraer tantos detalles como les fue posible.</p>
+                <p>En el blog también se confirma que RoboCop tendrá múltiples trajes en el juego, incluyendo el traje gris de la película original y una variante inspirada en Mortal Kombat 3.</p>
+                <p>Pueden ver el modelo a continuación:</p>
+                <div align="center">
+                    <video src="video/Robocop.mp4" preload="auto" autoplay loop></video>
+                </div>
+                <br> 
+                <br>
+                <p>Por Jose Carlos Ramirez</p>
+            </div>
+        </main> 
+        <footer class="footer">
+            <div class="container">
+                <p>Pagina diseñada por Jose Carlos y Alexis Vargas</p>
+                <p>La mayoria del contenido de esta pagina esta sacado de: <a href="https://www.nintenderos.com/">https://www.nintenderos.com/</a></p>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <script src="scripts.js"></script>
+</body>
+</html>

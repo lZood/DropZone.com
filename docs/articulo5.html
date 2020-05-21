@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-widht, initial-scale=1">
+    <title>DropZone</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <style>
+        /* Telefonos moviles:  aqui se hace que todos las columnas sean basadas en un ancho de 100 por ciento 
+        esto basado en una premisa que maneja a las páginas web dividiendolo en 12 
+        columnas cada una con un diferente ancho, debemos de seleccionar las que se adapten a nuestras necesidades*/
+        [class*="col-"] {
+            width: 100%;
+        }
+        /* en esta parte es para las tabletas, se llama breakpoints, digamos que como un case, de acuerdo al tamaño de la pantalla o un if*/
+        @media only screen and (min-width: 600px) {
+            /*  tablets: */
+            .col-m-1 {width: 8.33%;}
+            .col-m-2 {width: 16.66%;}
+            .col-m-3 {width: 25%;}
+            .col-m-4 {width: 33.33%;}
+            .col-m-5 {width: 41.66%;}
+            .col-m-6 {width: 50%;}
+            .col-m-7 {width: 58.33%;}
+            .col-m-8 {width: 66.66%;}
+            .col-m-9 {width: 75%;}
+            .col-m-10 {width: 83.33%;}
+            .col-m-11 {width: 91.66%;}
+            .col-m-12 {width: 100%;}
+        }
+        @media only screen and (min-width: 768px) {
+            /* Escritorio: */
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+        }
+        .analisis
+        {
+            background-color: rgb(46, 46, 46);
+            color: white;
+        }
+    </style>
+</head>
+<body >
+
+        
+        <header class="header">
+            <div class="container logo-nav-container">
+                <a href="index.html" class="logo"><h3>DropZone</h3></a>
+                <span class="menu-icon">Ver Menu</span>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#">Novedades</a></li>
+                        <li><a href="#">Noticias</a></li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="#">Analisis</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <h2>La Epic Games Store regalará copias de Grand Theft Auto V</h2>
+                <br>
+                <div align="center"><img src="images/GTA5.jpg"></div>
+                <br>
+                <p>¿Quieres tener Grand Theft Auto V para PC? Te tenemos una buena noticia: la nueva promoción de la Epic Games Store ya está disponible. Para aprovecharla solamente tienes que te dejamos más abajo.</p>
+                <p>Eso sí, es importante señalar que la Epic Games Store actualmente está pasando por problemas. Así pues, es probable que tengas dificultades para iniciar sesión</p>
+                <h3>¿COMO PODRÁS CONSEGUIR GRATIS GRAND THEFT AUTO V?</h3>
+                <p>El mensaje especifica que Epic Games Store regalará copias de Grand Theft Auto V por tiempo limitado. La publicación no indica cuándo iniciará la promoción, pero se espera que sea hoy, en cuestión de horas.</p>
+                <p>El teaser revela que los jugadores podrán reclamar su copia del juego y conservarla por siempre en sus cuentas. Los usuarios de la Epic Games Store tendrán hasta el 21 de mayo para conseguir el juego de Rockstar sin costo alguno.</p>
+                <p>Para ello es necesario contar con una cuenta en la Epic Games Store. También es importante que recuerdes que, para obtener los juegos gratuitos, debes tener activa la verificación en 2 pasos.</p>
+                <p>Una vez reclamado tu juego será tuyo para siempre pero te sugerimos ser paciente, pues la tienda de Epic está saturada y puede tener caídas en el primer día de oferta si te salen errores 500, o carga lenta espera un poco, regresa en unas horas y reclama tu juego.</p>
+                <a href="https://www.epicgames.com/store/en-US/product/grand-theft-auto-v/home">https://www.epicgames.com/store/en-US/product/grand-theft-auto-v/home</a>
+                <br> 
+                <br>
+                <p>Por Jose Carlos Ramirez</p>
+            </div>
+        </main> 
+        <footer class="footer">
+            <div class="container">
+                <p>Pagina diseñada por Jose Carlos y Alexis Vargas</p>
+                <p>La mayoria del contenido de esta pagina esta sacado de: <a href="https://www.nintenderos.com/">https://www.nintenderos.com/</a></p>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <script src="scripts.js"></script>
+</body>
+</html>
