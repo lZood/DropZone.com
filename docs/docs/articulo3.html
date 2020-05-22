@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-widht, initial-scale=1">
+    <title>DropZone</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <style>
+        /* Telefonos moviles:  aqui se hace que todos las columnas sean basadas en un ancho de 100 por ciento 
+        esto basado en una premisa que maneja a las páginas web dividiendolo en 12 
+        columnas cada una con un diferente ancho, debemos de seleccionar las que se adapten a nuestras necesidades*/
+        [class*="col-"] {
+            width: 100%;
+        }
+        /* en esta parte es para las tabletas, se llama breakpoints, digamos que como un case, de acuerdo al tamaño de la pantalla o un if*/
+        @media only screen and (min-width: 600px) {
+            /*  tablets: */
+            .col-m-1 {width: 8.33%;}
+            .col-m-2 {width: 16.66%;}
+            .col-m-3 {width: 25%;}
+            .col-m-4 {width: 33.33%;}
+            .col-m-5 {width: 41.66%;}
+            .col-m-6 {width: 50%;}
+            .col-m-7 {width: 58.33%;}
+            .col-m-8 {width: 66.66%;}
+            .col-m-9 {width: 75%;}
+            .col-m-10 {width: 83.33%;}
+            .col-m-11 {width: 91.66%;}
+            .col-m-12 {width: 100%;}
+        }
+        @media only screen and (min-width: 768px) {
+            /* Escritorio: */
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+        }
+        .analisis
+        {
+            background-color: rgb(46, 46, 46);
+            color: white;
+        }
+    </style>
+</head>
+<body >
+
+        
+        <header class="header">
+            <div class="container logo-nav-container">
+                <a href="index.html" class="logo"><h3>DropZone</h3></a>
+                <span class="menu-icon">Ver Menu</span>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="index.html#inicio">Inicio</a></li>
+                    <li><a href="index.html#novedades" >Novedades</a></li>
+                    <li><a href="index.html#noticias">Noticias</a></li>
+                    <li><a href="index.html#videos">Videos</a></li>
+                    <li><a href="index.html#analisis">Analisis</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <h2>Fortnite supera los 350 millones de usuarios registrados</h2>
+                <br>
+                <div align="center"><img src="images/Fortnite.jpg"></div>
+                <br>
+                <p>Parece que Fortnite se resiste a ser ese título que siempre ha dado que hablar en los últimos tiempos entre multitud de jugadores. Y es que desde Epic han confirmado que el título ya supera la nada desdeñable cifra de 350 millones de usuarios registrados. Además, se estima que estos jugadores han pasado más de 3.200 millones de horas divirtiéndose con el título.</p>
+                <p>Si bien parecía que últimamente el battle royale por excelencia estaba perdiendo fuelle, con los recientes conciertos importantes como el de Travis Scott y las novedades que desde Epic siguen aportando, dan a entender que Fortnite sigue muy vivo. Por el momento, al menos así lo muestra.</p>
+                <p>¿Qué les parecen sus cifras? ¿Piensan que le permitirá estando al pie de cañón durante mucho tiempo?</p>
+                <br> 
+                <br>
+                <p>Por Alexis Vargas</p>
+            </div>
+        </main> 
+        <footer class="footer">
+            <div class="container">
+                <h3>
+                    <a href="#inicio" class="logo"><h3>DropZone</h3></a>
+                </h3>
+                <p class="text">El objetivo de esta pagina es crear una comunidad donde nos informemos y participemos en diversas actividades.</p>
+                <p class="text">
+                    Jose Carlos Ramirez Lopez <br> Alexis Efrain Vargas Ruiz <br> <br> informacion usada en algunos articulos fue recaudada de: <a href="https://www.nintenderos.com/">https://www.nintenderos.com/</a</p>
+                
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <script src="scripts.js"></script>
+</body>
+</html>

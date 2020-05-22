@@ -1,0 +1,220 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.4em;
+    margin: 0;
+
+}
+
+h1{
+    font-size: 2rem;
+    line-height: 1.3emq;
+}
+p{
+    margin-bottom: 1.6em;
+    text-align: justify;
+}
+
+.container{
+    width: 85%;
+}
+.aside{
+    float: right;
+    width: 20%;
+    background: white(160, 160, 160, 0.507);
+    padding: 0px;
+}
+.container img{
+    width: 85%;
+}
+
+.header{
+    background: #333;
+    color: white;
+    padding: 2rem 0;
+    z-index: 1;  
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    text-decoration: none;
+
+}
+.header a{
+    color: white;
+    text-decoration: none;
+}
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header .logo{
+    letter-spacing: 5px;
+    font-size: 1.2em;
+    text-align: left;
+    text-decoration: none;
+}
+.header.a.logo:hover{
+    color: black;
+}
+
+.menu-icon{
+    display: none;
+}
+.navigation ul {
+margin: 0;
+padding: 0;
+list-style: none;
+z-index: 1;
+text-decoration: none;
+}
+
+.navigation ul li{
+    display: inline-block;
+    text-decoration: none;
+}
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.navigation ul li a:hover {
+    background: #4a4a4a;
+    color: white;
+    text-decoration: none;
+}
+
+.footer{
+    background: #333;
+    padding: 0.4rem 0;
+    text-align: left;
+    margin-top: 6rem;
+}
+.footer a:hover{
+    text-decoration: none;
+    color: rgb(132, 178, 230);
+    transition: 0.4s;
+}
+.text{
+    color: white;
+    font-size: small;
+}
+.text a{
+    color: white;
+}
+.main{
+    padding-top: 8rem;
+}
+
+.article{
+    width: 100%;
+    background: white;
+    height: 250px;
+    text-decoration: none;
+}
+.article img{
+    height: 250px;
+    width: 400px;
+    float: left;
+    padding: 20px;
+}
+.article h3{
+    padding: 10px;
+    text-decoration: none;
+}
+.container .article a{
+    color: black;
+    text-decoration: none;
+}
+.article:hover{
+    background: rgba(160, 160, 160, 0.507);
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.footer .container .logo
+{
+    letter-spacing: 5px;
+    font-size: 1.2em;
+    color: white;
+    text-align: left;
+    text-decoration: none;
+}
+@media only screen and (max-width: 1200px){
+    .article p
+    {
+        font-size: small;
+    }
+    .article h3
+    {
+        font-size: large;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .article p
+    {
+        font-size: smaller;
+    } 
+}
+@media only screen and (max-width: 990px){
+    .article p
+    {
+        font-size: x-small;
+    } 
+}
+@media only screen and (max-width: 767px){
+       
+    .menu-icon{
+            display: block;
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+        }
+        .navigation{
+            width: 100%;
+            margin-top: 1rem;
+        }
+        .navigation ul{
+            display: none;
+        }
+        .navigation ul.show{
+            display: block;
+        }
+        .navigation ul li{
+            display: block;
+        }
+        .navigation ul li a{
+            display: block;
+            padding: 0.5rem 0;
+            transition: all 0.4s linear;
+            border-radius: 5px;
+        }
+        
+        .navigation ul li a:hover {
+            background: #4a4a4a;
+        }
+    .article p
+    {
+        display: none;
+    }
+    .article h3
+    {
+        font-size: large;
+    }
+    .article img{
+        height: 80%;
+        width: 100%;
+        float: left;
+        padding: 20px;
+    }
+    .container video{
+        height: 400px;
+        width: 200px;
+    }
+}
