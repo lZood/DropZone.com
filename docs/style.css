@@ -33,11 +33,12 @@ p{
     background: #333;
     color: white;
     padding: 2rem 0;
-
+    z-index: 1;  
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
+    text-decoration: none;
 
 }
 .header a{
@@ -51,9 +52,14 @@ p{
     flex-wrap: wrap;
 }
 
-.logo{
+.header .logo{
     letter-spacing: 5px;
     font-size: 1.2em;
+    text-align: left;
+    text-decoration: none;
+}
+.header.a.logo:hover{
+    color: black;
 }
 
 .menu-icon{
@@ -63,29 +69,46 @@ p{
 margin: 0;
 padding: 0;
 list-style: none;
+z-index: 1;
+text-decoration: none;
 }
 
 .navigation ul li{
     display: inline-block;
+    text-decoration: none;
 }
 .navigation ul li a{
     display: block;
     padding: 0.5rem 1rem;
     transition: all 0.4s linear;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 .navigation ul li a:hover {
     background: #4a4a4a;
+    color: white;
+    text-decoration: none;
 }
 
 .footer{
-    background: #f2f2f2;
-    padding: 4rem 0;
-    text-align: center;
+    background: #333;
+    padding: 0.4rem 0;
+    text-align: left;
     margin-top: 6rem;
 }
-
+.footer a:hover{
+    text-decoration: none;
+    color: rgb(132, 178, 230);
+    transition: 0.4s;
+}
+.text{
+    color: white;
+    font-size: small;
+}
+.text a{
+    color: white;
+}
 .main{
     padding-top: 8rem;
 }
@@ -94,6 +117,7 @@ list-style: none;
     width: 100%;
     background: white;
     height: 250px;
+    text-decoration: none;
 }
 .article img{
     height: 250px;
@@ -103,8 +127,9 @@ list-style: none;
 }
 .article h3{
     padding: 10px;
+    text-decoration: none;
 }
-.article a{
+.container .article a{
     color: black;
     text-decoration: none;
 }
@@ -112,11 +137,38 @@ list-style: none;
     background: rgba(160, 160, 160, 0.507);
     transition: all 0.4s linear;
     border-radius: 5px;
+    text-decoration: none;
 }
-
-
-
-
+.footer .container .logo
+{
+    letter-spacing: 5px;
+    font-size: 1.2em;
+    color: white;
+    text-align: left;
+    text-decoration: none;
+}
+@media only screen and (max-width: 1200px){
+    .article p
+    {
+        font-size: small;
+    }
+    .article h3
+    {
+        font-size: large;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .article p
+    {
+        font-size: smaller;
+    } 
+}
+@media only screen and (max-width: 990px){
+    .article p
+    {
+        font-size: x-small;
+    } 
+}
 @media only screen and (max-width: 767px){
        
     .menu-icon{
@@ -147,4 +199,22 @@ list-style: none;
         .navigation ul li a:hover {
             background: #4a4a4a;
         }
+    .article p
+    {
+        display: none;
+    }
+    .article h3
+    {
+        font-size: large;
+    }
+    .article img{
+        height: 80%;
+        width: 100%;
+        float: left;
+        padding: 20px;
+    }
+    .container video{
+        height: 400px;
+        width: 200px;
+    }
 }
